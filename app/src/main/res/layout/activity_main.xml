@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<!--App Title-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="@string/app_name" />
+    <!--Here is the Text and Radio Buttons for picking
+    how many players participate in the game-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playerchoice_text"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    <RadioGroup
+        android:id="@+id/Player_Choices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <!--Button for 1 Player-->
+        <RadioButton
+            android:id="@+id/One_Player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_choice1"
+            android:layout_marginRight="10dp"
+            android:checked="true"
+            android:textSize="15dp"/>
+        <!--Button for 2 Players-->
+        <RadioButton
+            android:id="@+id/Two_Players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_choice2"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"/>
+
+    </RadioGroup>
+    <!--Images of Each Team Icon-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <!--Team Android Image-->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:src="@drawable/android_logo"
+            android:layout_marginRight="10dp"/>
+        <!--Team IOS Image-->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:src="@drawable/ios_logo"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+    <!--Text and Radio Buttons for Choice of Team for
+    Player 1-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teamchoice_text"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    <RadioGroup
+        android:id="@+id/Team_Choices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Button for Team Android-->
+        <RadioButton
+            android:id="@+id/Team_Android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_choice1"
+            android:layout_marginRight="10dp"
+            android:checked="true"
+            android:textSize="15dp"/>
+        <!--Button for Team IOS-->
+        <RadioButton
+            android:id="@+id/Team_IOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/team_choice2"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"/>
+
+    </RadioGroup>
+    <!--The button the user clicks to start the game-->
+    <Button
+        android:id="@+id/Start_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/startbutton_text"/>
+</LinearLayout>

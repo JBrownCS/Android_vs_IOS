@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Term Project</string>
+
+    <!--Radio Group button text for picking if the user wants to do 1 or 2 players-->
+    <string name="playerchoice_text">How Many Players?</string>
+    <string name="player_choice1">1 Player</string>
+    <string name="player_choice2">2 Players</string>
+
+    <!--Radio Group button text for picking which team the user wants-->
+    <string name="teamchoice_text">Which Team is Player 1 On?</string>
+    <string name="team_choice1">Android</string>
+    <string name="team_choice2">IOS</string>
+
+    <!--Text to show whether it is player 1, player 2, or the CPU's turn-->
+    <string name="player1_turn">Player 1\'\s Turn</string>
+    <string name="player2_turn">Player 2\'\s Turn</string>
+    <string name="cpu_turn">CPU\'\s Turn</string>
+
+    <!--Text to show who the winner is among player 1, player 2, and the CPU-->
+    <string name="player1_win">Player 1 Wins</string>
+    <string name="player2_win">Player 2 Wins</string>
+    <string name="cpu_win">CPU wins</string>
+
+    <!--Text to click on to know more about Mac or PC-->
+    <string name="mac_text">Term Project</string>
+    <string name="pc_text">Term Project</string>
+
+    <!--Text for the image tags-->
+    <string name="default_tag">default</string>
+    <string name="android_tag">Android</string>
+    <string name="ios_tag">IOS</string>
+
+    <!--Text for the button starting the game-->
+    <string name="startbutton_text">Let\'\s Start Playing!</string>
+</resources>

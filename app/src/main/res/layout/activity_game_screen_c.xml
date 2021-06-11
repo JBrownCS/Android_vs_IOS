@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameScreenC">
+
+    <!--The text for if it is Player 1, Player 2, or CPU turn-->
+    <TextView
+        android:id="@+id/Player_Turn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/player1_turn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--The Images on the first row-->
+        <ImageButton
+            android:id="@+id/imageButtonC1"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+        <ImageButton
+            android:id="@+id/imageButtonC2"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+        <ImageButton
+            android:id="@+id/imageButtonC3"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--The Images on the first row-->
+        <ImageButton
+            android:id="@+id/imageButtonC4"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+        <ImageButton
+            android:id="@+id/imageButtonC5"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+        <ImageButton
+            android:id="@+id/imageButtonC6"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--The Images on the first row-->
+        <ImageButton
+            android:id="@+id/imageButtonC7"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+        <ImageButton
+            android:id="@+id/imageButtonC8"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+        <ImageButton
+            android:id="@+id/imageButtonC9"
+            android:contentDescription="@string/default_tag"
+            android:layout_width="140dp"
+            android:layout_height="140dp"/>
+    </TableRow>
+
+</TableLayout>
+
+    <TextView
+        android:id="@+id/player1_ScoreboardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Score:"/>
+    <TextView
+        android:id="@+id/player1_Scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+    <TextView
+        android:id="@+id/player2_ScoreboardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player ScoreC:"/>
+    <TextView
+        android:id="@+id/player2_Scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+
+</LinearLayout>
